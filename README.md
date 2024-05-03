@@ -1,9 +1,9 @@
-![mi](https://github.com/SivadithiyanOfcl/EDM-MGC/assets/113179307/d41e8014-936a-44a0-a886-c3f916a88e3c)# EDM-MGC
+# EDM-MGC
 
 
 🎵 EDM-MGC (Electronic Dance Music Music Genre Classification) is a project aimed at automatically categorizing music tracks into different EDM sub-genres. By leveraging machine ML algorithms, it analyzes audio features to identify characteristics unique to each genre, such as MFCC, Chroma, and Spectral features. With EDM-MGC, users can efficiently organize and discover EDM tracks, enhancing their music listening experience! 🎧💃🔊
 
-## Output
+## Preview
 
 ![cremate](https://github.com/SivadithiyanOfcl/EDM-MGC/assets/113179307/e105b5f3-38e9-4068-9b7e-fa33af1b737e)
 ![Hope](https://github.com/SivadithiyanOfcl/EDM-MGC/assets/113179307/184ddf35-98d5-483c-83c9-897077ebb3af)
