@@ -5,8 +5,9 @@
 
 ## Output
 
-https://github.com/SivadithiyanOfcl/EDM-MGC/blob/main/EDMMGC/samples/Hope.png
-https://github.com/SivadithiyanOfcl/EDM-MGC/blob/main/EDMMGC/samples/cremate.png
+![cremate](https://github.com/SivadithiyanOfcl/EDM-MGC/assets/113179307/e105b5f3-38e9-4068-9b7e-fa33af1b737e)
+![Hope](https://github.com/SivadithiyanOfcl/EDM-MGC/assets/113179307/184ddf35-98d5-483c-83c9-897077ebb3af)
+
 
 ## Setup
 To get this repository, run the following command inside your git-enabled terminal:
