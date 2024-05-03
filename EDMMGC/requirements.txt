@@ -1,0 +1,6 @@
+Django==4.1
+matplotlib
+librosa
+numpy
+tensorflow
+joblib

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDM-MGC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+
+
+</head>
+<body>
+    <!-- Title section -->
+    <div class = "title-section">
+        <div class = "container-fluid">
+            <!-- Title bar -->
+            <nav class = "navbar navbar-dark navbar-expand-lg">
+                <a class ="navbar-brand" href="#classifier" >EDM Genre Classifier</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
+
+                <!-- Collapsible div with sections -->
+                <div class="collapse navbar-collapse" id = "navbarTogglerDemo01">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href = "#instructions">Instructions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href = "#classifier">Classifier</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href = "#Explanation">Explanation</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <br>
+        
+        <div class="row">
+
+            <div class="col-md-6 col-lg-6 col-12 d-flex flex-column justify-content-between">
+
+                <div class="row mt-4">
+                    <div class="col d-flex justify-content-center">
+                        <!-- Heading -->
+                        <h1 class="main-title">Upload an EDM song and identify its genre!.</h1>
+                    </div>
+                </div>
+
+                <div class = "row">
+                    <div class="col d-flex justify-content-center">
+                        <!-- Small text -->
+                        <h4>Does not know the genre name of the track you are listening to?
+                            Fear not!
+                        </h4>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <!-- Try button -->
+                        <button type="button" class="btn btn-dark btn-lg download-button" onclick="scrollToClassifier()">
+                            <i class="fa-solid fa-thumbs-up"></i> Try!
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-6 col-lg-6 col-12 mt-4">
+                <!-- Instrument Image -->
+                <img class="title-image" src="/static/images/instruments.png" alt="inst">
+            </div>
+        </div>
+
+    </div>
+    <!-- Title section -->
+
+    <!-- Introduction section -->
+    <div class = "section intro-section">
+        <h1 class="section-titles"><center>Introduction</center></h1>
+
+        <div class = "questions-div p-10 d-flex flex-column justify-content-center text-center">
+            <i class="fa-solid fa-music fa-4x"></i>
+            <h2 class="ques-head">What is a genre?</h2>
+            <p class="ques-ans">According to wikipedia, Genre is any form or type of communication in any mode (written, spoken, digital, artistic, etc.) with socially-agreed-upon conventions developed over time.
+            In my own words, genre is a way of classifying a certain type of art (in this case "music") based on features and characteristics of the art which are publicly agreed upon!</p>
+
+            <br><br>
+            <i class="fa-solid fa-headphones fa-4x"></i>
+            <h2 class="ques-head">Why do we need to classify genres?</h2>
+            <p class="ques-ans">Imagine this. You are found this new song from an new upcoming artist named <a href="https://soundcloud.com/avis-official" target="_blank" >"Avis" on soundcloud</a>  😏😏 and you like how it sounds and you would like to hear more of the style. But you dont know what genre it is but the recommendation
+                systems from your favourite streaming platform knows what genre it is and suggests you even more songs from different artists belong to the same style i.e., genre. This is where <b>MGC</b> comes into play. <br><br> <b>Music Genre Classification</b> is one of the very important components in <i>recommendation algorithms</i> 
+                these days and they help us craft our very own genre-specific playlists to cater our emotions and mood and also allows new artists to be reached by classifying music and distribute to listeners across the world!. That's one reason why we classify genres.
+            </p>
+
+            <br><br>
+            <i class="fa-solid fa-list-check fa-4x"></i>
+            <h2 class="ques-head">Why this project?</h2>
+            <p class="ques-ans">This project is to showcase my skills as a machine learning engineer as well as a software developer (Web development). I love music and I love programming so what better way to
+                to combine both of my interests by making a project which does it exactly. I had so much fun going through 20+ hours of music and even more time waiting for my ML models to train. But I think it was totally
+                worth my time. That's all that matters.
+            </p>
+        </div>
+
+    </div>
+    <!-- Introduction section -->
+
+    <!-- Instructions section -->
+    
+    <div class="instructions-section" id = "instructions">
+        <h1 class="section-titles">Instructions</h1>
+        <h2 class="other-h2">Things to keep in mind before proceeding</h2>
+
+        <br><br>
+
+        <div class = "instruct-div">
+
+            <h5 class="inst-ans">😊 This model is specifically trained on drop/verse section of songs 😊</h5>
+            <h5 class="inst-ans">😞 Entering full songs might lead to poor predictions 😞</h5>
+            <h5 class="inst-ans">🎵 Allowed audio file formats: .mp3, .wav, .ogg, .flac 🎵</h5>
+            <h5 class="inst-ans">🎧 Audio can be in both mono or stereo. 🎧</h5>
+            <h5 class="inst-ans">🔊 Sample rate should be 22050 Hz or higher 🔊</h5>
+            <br>
+            <h5 class="inst-ans">🌸 There are literally 1000's of EDM sub-genres 🌸</h5>
+            <h5 class="inst-ans">🎶 The model I included, is specifically trained on only 11 genres 🎶</h5>
+            <h5 class="inst-ans">❗ Model may not be able to predict beside on the ones which it trained on ❗</h5>
+            <h5 class="inst-ans">😭 If your favorite genre is not here. I'm so sorry please leave me alone jk. 😭</h5>
+                
+            <br><br>
+
+            <div class="row">
+
+                <div class="col-md-4 col-lg-4">
+                    <ul class="genre-names">
+                        <li class = "genre-item"><h5>Dubstep</h5></li>
+                        <li class = "genre-item"><h5>Drum and Bass</h5></li>
+                        <li class = "genre-item"><h5>Ambient</h5></li>
+                        <li class = "genre-item"><h5>Future Garage/Wave Trap</h5></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                    <ul class="genre-names">
+                        <li class = "genre-item"><h5>Hardcore</h5></li>
+                        <li class = "genre-item"><h5>Hardstyle</h5></li>
+                        <li class = "genre-item"><h5>Psytrance</h5></li>
+                        <li class = "genre-item"><h5>Trance</h5></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                    <ul class="genre-names">
+                        <li class = "genre-item"><h5>Big Room House</h5></li>
+                        <li class = "genre-item"><h5>House</h5></li>
+                        <li class = "genre-item"><h5>Techno</h5></li>
+                        <li class = "genre-item"><h5>---</h5></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <br><br>
+
+            <h5 class = "inst-ans">If you face any issues regarding this website please contact me through the <a href="#about">About me!</a> section</p>
+        
+            </div>
+    </div>
+        
+    
+    <!-- Instructions section -->
+
+    <!-- Classifier section -->
+    <div class="classifier-section" id="classifier">
+        <h1 class="section-titles">Classifier</h1>
+        <div class="classifier-div">
+            <h2 class="other-h2">Upload your .mp3 audio file here!</h2>
+            <h4>Please make sure that you have read the <a href="#instructions">Instructions</a> carefully</h4>
+            <br><br><br>
+            <form id="audioForm" enctype="multipart/form-data">
+                <input type="file" id="audioFileInput" name="audioFile" accept="audio/mp3, audio/wav, audio/flac, audio/ogg" style="display: none;">
+                <div id="waveformContainer" style="display: none;">
+                    <h2>Waveform</h2><br><br>
+                    <div id="waveformImageContainer"></div>
+                    <br><br>
+                </div>
+                <br>
+                <div id="audioPlayerContainer">
+                    <audio id="audioPlayer" controls>
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                
+                {% csrf_token %}
+                <button type="button" class="btn btn-dark btn-lg listen-button" id="uploadButton"><i class="fa-solid fa-upload"></i> Upload</button>
+                <button type="button" class="btn btn-dark btn-lg listen-button start-button" id="startButton"><i class="fa-solid fa-person-running"></i> Start!</button>
+                
+            </form>
+        </div>
+    </div>
+    <!-- Classifier section -->
+
+    <!-- About project section -->
+    <div class="about-project-section" id = "about-project">
+        <div class = "about-box">
+            <h1 class="section-titles">About this project!</h1>
+            <h2>I made this project as a segue/extension to my research on music genre classification, which will be released as a part of the <b>ICEICT - 2024 publication</b></h2>
+            <h4>(Once it gets released, I will hyperlink the source)</h4>
+    
+            <br><br>
+            <h2>Documentation and source code to this project is openly available on my github page</h2>
+            <br>
+            <h4>👇👇👇</h4>
+            <br>
+            <i class="fa-solid fa-brands fa-github fa-4x"></i>
+            <br><br>
+        </div>    
+    </div>
+    <!-- About project section -->
+    
+    <!-- About me section -->
+    <div class="about-me-section" id = "about">
+        <div class = "about-box">
+            <h1 class="section-titles">About me!</h1>
+            <h2>Hello there! My name is Sivadithiyan and I made this interesting website!</h2>
+            <br><br>
+            <h4>Check out my socials and let me know how you feel!</h4>
+        </div>    
+    </div>
+    <!-- About me section -->
+    <!-- Footer -->
+    <footer id="footer">
+        <i class= "social-icons fa-brands fa-linkedin fa-2x"><a href="https://www.linkedin.com/in/sivadithiyan-p-735325250/" target="_blank" ></a></i>
+        <i class= "social-icons fa-brands fa-github fa-2x"><a href="https://github.com/SivadithiyanOfcl" target="_blank" ></a></i>
+        <i class= "social-icons fa-solid fa-envelope fa-2x"><a href="mailto: sivadithiyan.official@gmail.com" target="_blank" ></a></i>
+        <p>© Copyright Sivadithiyan</p>
+  
+    </footer>
+    <!-- Footer -->
+    
+    <script>
+
+
+        function scrollToClassifier() {
+            var element = document.getElementById('classifier');
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        document.querySelector('.listen-button').addEventListener('click', function() {
+            document.querySelector('#audioFileInput').click();
+        });
+          
+        document.querySelector('#audioFileInput').addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                const fileType = file.type;
+                const audioPlayer = document.querySelector('#audioPlayer');
+                
+                // Check if the file type is supported
+                if (fileType.startsWith('audio/')) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        audioPlayer.src = e.target.result;
+                        document.getElementById('audioPlayerContainer').style.display = 'block';
+                    };
+                    reader.readAsDataURL(file);
+                } else {
+                    alert('Please upload an audio file.');
+                }
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('startButton').addEventListener('click', checkAudioFile);
+        });
+        
+        async function checkAudioFile() {
+            var audioFile = document.getElementById('audioFileInput').files[0];
+            if (audioFile) {
+                var formData = new FormData();
+                formData.append('audioFile', audioFile);
+        
+                try {
+                    const response = await fetch('{% url "upload_audio" %}', {
+                        method: 'POST',
+                        headers: {
+                            'X-CSRFToken': '{{ csrf_token }}'
+                        },
+                        body: formData
+                    });
+        
+                    if (response.ok) {
+                        const responseData = await response.json();
+                        if (responseData.message === 'OK') {
+                            // Decode and display waveform image
+                            displayWaveform(responseData.waveform);
+                            //alert('Audio file uploaded successfully!');
+                        } else {
+                            alert('Error uploading audio file: ' + responseData.error);
+                        }
+                    } else {
+                        alert('Error uploading audio file: ' + response.statusText);
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('An error occurred while uploading the audio file!');
+                }
+            } else {
+                alert('Please upload an audio file!');
+            }
+        }
+        
+        function displayWaveform(waveform) {
+            var waveformImg = document.createElement('img');
+            waveformImg.src = 'data:image/png;base64,' + waveform;
+            waveformImg.style.width = '70%';
+            var waveformContainer = document.getElementById('waveformImageContainer');
+            waveformContainer.innerHTML = '';
+            waveformContainer.appendChild(waveformImg);
+            waveformContainer.parentNode.style.display = 'block';
+        }
+        
+        
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
