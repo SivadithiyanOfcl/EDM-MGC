@@ -5,8 +5,8 @@
 
 ## Output
 
-()[https://github.com/SivadithiyanOfcl/EDM-MGC/blob/main/EDMMGC/samples/Hope.png "Hope"]
-()[https://github.com/SivadithiyanOfcl/EDM-MGC/blob/main/EDMMGC/samples/cremate.png "Cremate"]
+https://github.com/SivadithiyanOfcl/EDM-MGC/blob/main/EDMMGC/samples/Hope.png
+https://github.com/SivadithiyanOfcl/EDM-MGC/blob/main/EDMMGC/samples/cremate.png
 
 ## Setup
 To get this repository, run the following command inside your git-enabled terminal:
