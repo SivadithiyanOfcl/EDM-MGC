@@ -3,10 +3,15 @@
 
 🎵 EDM-MGC (Electronic Dance Music Music Genre Classification) is a project aimed at automatically categorizing music tracks into different EDM sub-genres. By leveraging machine ML algorithms, it analyzes audio features to identify characteristics unique to each genre, such as MFCC, Chroma, and Spectral features. With EDM-MGC, users can efficiently organize and discover EDM tracks, enhancing their music listening experience! 🎧💃🔊
 
+## Output
+
+()[https://github.com/SivadithiyanOfcl/EDM-MGC/blob/main/EDMMGC/samples/Hope.png "Hope"]
+()[https://github.com/SivadithiyanOfcl/EDM-MGC/blob/main/EDMMGC/samples/cremate.png "Cremate"]
+
 ## Setup
 To get this repository, run the following command inside your git-enabled terminal:
 
-```git clone https://github.com/shreys7/django-todo.git```
+```git clone https://github.com/SivadithiyanOfcl/EDM-MGC.git```
 
 Note: In-order to run the project, use your base/virtual environment. and locate to the requirements.txt in your folder and install the necessary libraries.
 
