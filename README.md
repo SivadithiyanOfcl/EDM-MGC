@@ -8,7 +8,6 @@
 ![cremate](https://github.com/SivadithiyanOfcl/EDM-MGC/assets/113179307/e105b5f3-38e9-4068-9b7e-fa33af1b737e)
 ![Hope](https://github.com/SivadithiyanOfcl/EDM-MGC/assets/113179307/184ddf35-98d5-483c-83c9-897077ebb3af)
 ![opp](https://github.com/SivadithiyanOfcl/EDM-MGC/assets/113179307/b7a60d98-e34f-441c-950a-8ab7019226e2)
-![opp](https://github.com/SivadithiyanOfcl/EDM-MGC/assets/113179307/f0f686b3-41b0-4a2c-9c56-383e8799c7a5)
 ![mi](https://github.com/SivadithiyanOfcl/EDM-MGC/assets/113179307/bca88fb0-0163-4ffc-87cf-72c73ba6a62c)
 
 
